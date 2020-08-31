@@ -16,11 +16,17 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.notice.form.label.title" path="title"/>
-	<acme:form-textbox code="administrator.notice.form.label.body" path="body"/>
-	<acme:form-url code="administrator.notice.form.label.picture" path="picture"/>
-	<acme:form-moment code="administrator.notice.form.label.date" path="date"/>
-	<acme:form-moment code="administrator.notice.form.label.deadline" path="deadline"/>
-	<acme:form-textbox code="administrator.notice.form.label.links" path="links"/>
+	<acme:form-textbox code="administrator.notice.form.label.title" path="title" readonly="${command!='create'}"/>
+	<acme:form-textbox code="administrator.notice.form.label.body" path="body" readonly="${command!='create'}"/>
+	<acme:form-url code="administrator.notice.form.label.picture" path="picture" readonly="${command!='create'}"/>
+	<jstl:if test="${command != 'create'}">
+		<acme:form-moment code="administrator.notice.form.label.date" path="date" readonly="true"/>
+	</jstl:if>
+	<acme:form-moment code="administrator.notice.form.label.deadline" path="deadline" readonly="${command!='create'}"/>
+	<acme:form-textbox code="administrator.notice.form.label.links" path="links" readonly="${command!='create'}"/>
+	<jstl:if test="${command == 'create'}">
+		<acme:form-checkbox code="administrator.notice.form.label.confirmation" path="confirmation"/>
+	</jstl:if>
 	<acme:form-return code="administrator.notice.form.button.return"/>
+	<acme:form-submit test="${command=='create'}" code="administrator.notice.form.button.create" action="/administrator/notice/create"/>
 </acme:form>

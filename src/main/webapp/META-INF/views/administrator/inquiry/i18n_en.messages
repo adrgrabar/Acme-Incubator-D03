@@ -1,0 +1,11 @@
+administrator.inquiry.list.label.title = Title
+administrator.inquiry.list.label.description = Description
+
+administrator.inquiry.form.label.title = Title
+administrator.inquiry.form.label.description = Description
+administrator.inquiry.form.label.date = Creation date
+administrator.inquiry.form.label.deadline = Deadline
+administrator.inquiry.form.label.email = Email
+administrator.inquiry.form.label.moneyStart = Minimun money
+administrator.inquiry.form.label.moneyEnd = Maximun money
+administrator.inquiry.form.button.return = Return

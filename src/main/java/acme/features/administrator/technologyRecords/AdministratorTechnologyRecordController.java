@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.administrator.notice;
+package acme.features.administrator.technologyRecords;
 
 import javax.annotation.PostConstruct;
 
@@ -18,22 +18,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.notices.Notice;
+import acme.entities.technologyRecords.TechnologyRecord;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/notice/")
-public class AdministratorNoticeController extends AbstractController<Administrator, Notice> {
+@RequestMapping("/administrator/technology-record/")
+public class AdministratorTechnologyRecordController extends AbstractController<Administrator, TechnologyRecord> {
 
 	// Internal state ---------------------------------------------------------
 	@Autowired
-	private AdministratorNoticeListService		listService;
+	private AdministratorTechnologyRecordListService	listService;
 	@Autowired
-	private AdministratorNoticeShowService		showService;
-	@Autowired
-	private AdministratorNoticeCreateService	createService;
+	private AdministratorTechnologyRecordShowService	showService;
 	// Constructors -----------------------------------------------------------
 
 
@@ -41,7 +39,6 @@ public class AdministratorNoticeController extends AbstractController<Administra
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 	}
 
 }

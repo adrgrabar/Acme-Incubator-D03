@@ -1,7 +1,7 @@
 authenticated.challenge.list.label.title = Título
 authenticated.challenge.list.label.description = Descripción
 
-authenticated.challenge.form.label.title = Title
+authenticated.challenge.form.label.title = Título
 authenticated.challenge.form.label.description = Descripción
 authenticated.challenge.form.label.deadline = Fecha de fin
 authenticated.challenge.form.label.rookieGoal = Objetivo de novato

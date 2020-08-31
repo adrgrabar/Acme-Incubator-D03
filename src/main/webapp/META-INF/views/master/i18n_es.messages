@@ -48,6 +48,17 @@ master.menu.authenticated.challenge = Retos
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.notice = Noticias
+master.menu.administrator.notice.create = Crear una noticia
+master.menu.administrator.toolRecord = Herramientas
+master.menu.administrator.technologyRecord = Tecnologías
+master.menu.administrator.inquiry = Investigaciones
+master.menu.administrator.overture = Propuestas
+master.menu.administrator.challenge = Retos
+master.menu.administrator.toolRecord.create = Crea una herramineta
+master.menu.administrator.technologyRecord.create = Crea una tecnología
+master.menu.administrator.inquiry.create = Crea una investigación
+master.menu.administrator.overture.create = Crea una propuesta
+master.menu.administrator.challenge.create = Crea un reto
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################

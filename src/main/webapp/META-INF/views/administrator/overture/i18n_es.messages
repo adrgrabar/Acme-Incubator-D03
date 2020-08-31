@@ -1,0 +1,11 @@
+administrator.overture.list.label.title = Titulo
+administrator.overture.list.label.description = Descripción
+
+administrator.overture.form.label.title = Título
+administrator.overture.form.label.description = Descripción
+administrator.overture.form.label.date = Fecha de creación
+administrator.overture.form.label.deadline = Fecha de fin
+administrator.overture.form.label.email = Email
+administrator.overture.form.label.moneyStart = Dinero mínimo
+administrator.overture.form.label.moneyEnd = Dinero máximo
+administrator.overture.form.button.return = Volver
