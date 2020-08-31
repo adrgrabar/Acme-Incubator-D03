@@ -26,4 +26,9 @@
 	<acme:form-money code="administrator.challenge.form.label.averageReward" path="averageReward"/>
 	<acme:form-money code="administrator.challenge.form.label.expertReward" path="expertReward"/>
 	<acme:form-return code="administrator.challenge.form.button.return"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.challenge.form.button.delete" action="/administrator/challenge/delete"/>
+	<acme:form-submit test="${command=='create'}" code="administrator.challenge.form.button.create" action="/administrator/challenge/create"/>
+	<acme:form-submit test="${command=='update'}" code="administrator.challenge.form.button.update" action="/administrator/challenge/update"/>
+	<acme:form-submit test="${command=='delete'}" code="administrator.challenge.form.button.delete" action="/administrator/challenge/delete"/>
 </acme:form>

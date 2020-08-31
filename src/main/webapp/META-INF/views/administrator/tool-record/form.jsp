@@ -24,4 +24,9 @@
 	<acme:form-textbox code="administrator.toolRecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="administrator.toolRecord.form.label.openSource" path="openSource"/>
 	<acme:form-return code="administrator.toolRecord.form.button.return"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.toolRecord.form.button.update" action="/administrator/tool-record/update"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.toolRecord.form.button.delete" action="/administrator/tool-record/delete"/>
+	<acme:form-submit test="${command=='create'}" code="administrator.toolRecord.form.button.create" action="/administrator/tool-record/create"/>
+	<acme:form-submit test="${command=='update'}" code="administrator.toolRecord.form.button.update" action="/administrator/tool-record/update"/>
+	<acme:form-submit test="${command=='delete'}" code="administrator.toolRecord.form.button.delete" action="/administrator/tool-record/delete"/>
 </acme:form>

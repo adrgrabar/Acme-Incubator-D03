@@ -17,3 +17,4 @@ administrator.notice.form.button.return = Return
 administrator.notice.form.button.create = Create
 
 administrator.notice.error.confirmation = Please confirm that you want to publish
+administrator.notice.error.deadline = Deadline must be in the future

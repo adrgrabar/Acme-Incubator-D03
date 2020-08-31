@@ -10,6 +10,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -26,7 +27,7 @@ public class Overture extends DomainEntity {
 	@NotBlank
 	private String				title;
 
-	@NotNull
+	@Past
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date				date;
 

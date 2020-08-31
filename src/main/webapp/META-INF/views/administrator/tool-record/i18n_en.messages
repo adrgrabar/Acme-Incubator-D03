@@ -10,4 +10,10 @@ administrator.toolRecord.form.label.webSite = Web site
 administrator.toolRecord.form.label.email = email
 administrator.toolRecord.form.label.inventor = Inventor
 administrator.toolRecord.form.label.openSource = Open source
+
 administrator.toolRecord.form.button.return = Return
+administrator.toolRecord.form.button.create = Create
+administrator.toolRecord.form.button.update = Update
+administrator.toolRecord.form.button.delete = Delete
+
+administrator.toolRecords.error.stars = You can only rate between 0 and 5

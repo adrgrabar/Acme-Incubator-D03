@@ -60,10 +60,15 @@ public class AdministratorNoticeCreateService implements AbstractCreateService<A
 		if (!errors.hasErrors("confirmation")) {
 			errors.state(request, request.getModel().getString("confirmation").equals("true"), "confirmation", "administrator.notice.error.confirmation");
 		}
+		if (!errors.hasErrors("deadline")) {
+			errors.state(request, entity.getDeadline().after(new Date(System.currentTimeMillis())), "deadline", "administrator.notice.error.deadline");
+		}
 	}
 
 	@Override
 	public void create(final Request<Notice> request, final Notice entity) {
+		assert request != null;
+		assert entity != null;
 		Date date;
 		date = new Date(System.currentTimeMillis() - 1);
 		entity.setDate(date);

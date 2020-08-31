@@ -24,4 +24,9 @@
 	<acme:form-textbox code="administrator.technologyRecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="administrator.technologyRecord.form.label.openSource" path="openSource"/>
 	<acme:form-return code="administrator.technologyRecord.form.button.return"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.technologyRecord.form.button.update" action="/administrator/technology-record/update"/>
+	<acme:form-submit test="${command=='show'}" code="administrator.technologyRecord.form.button.delete" action="/administrator/technology-record/delete"/>
+	<acme:form-submit test="${command=='create'}" code="administrator.technologyRecord.form.button.create" action="/administrator/technology-record/create"/>
+	<acme:form-submit test="${command=='update'}" code="administrator.technologyRecord.form.button.update" action="/administrator/technology-record/update"/>
+	<acme:form-submit test="${command=='delete'}" code="administrator.technologyRecord.form.button.delete" action="/administrator/technology-record/delete"/>
 </acme:form>

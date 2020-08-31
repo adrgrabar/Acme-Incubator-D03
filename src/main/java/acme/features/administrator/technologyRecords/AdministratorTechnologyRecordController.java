@@ -32,6 +32,12 @@ public class AdministratorTechnologyRecordController extends AbstractController<
 	private AdministratorTechnologyRecordListService	listService;
 	@Autowired
 	private AdministratorTechnologyRecordShowService	showService;
+	@Autowired
+	private AdministratorTechnologyRecordCreateService	createService;
+	@Autowired
+	private AdministratorTechnologyRecordUpdateService	updateService;
+	@Autowired
+	private AdministratorTechnologyRecordDeleteService	deleteService;
 	// Constructors -----------------------------------------------------------
 
 
@@ -39,6 +45,9 @@ public class AdministratorTechnologyRecordController extends AbstractController<
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 
 }

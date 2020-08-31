@@ -32,6 +32,12 @@ public class AdministratorChallengeController extends AbstractController<Adminis
 	private AdministratorChallengeListService	listService;
 	@Autowired
 	private AdministratorChallengeShowService	showService;
+	@Autowired
+	private AdministratorChallengeCreateService	createService;
+	@Autowired
+	private AdministratorChallengeUpdateService	updateService;
+	@Autowired
+	private AdministratorChallengeDeleteService	deleteService;
 	// Constructors -----------------------------------------------------------
 
 
@@ -39,6 +45,9 @@ public class AdministratorChallengeController extends AbstractController<Adminis
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 
 }

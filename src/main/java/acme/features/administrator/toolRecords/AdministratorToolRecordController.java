@@ -29,9 +29,15 @@ public class AdministratorToolRecordController extends AbstractController<Admini
 
 	// Internal state ---------------------------------------------------------
 	@Autowired
-	private AdministratorToolRecordListService	listService;
+	private AdministratorToolRecordListService		listService;
 	@Autowired
-	private AdministratorToolRecordShowService	showService;
+	private AdministratorToolRecordShowService		showService;
+	@Autowired
+	private AdministratorToolRecordCreateService	createService;
+	@Autowired
+	private AdministratorToolRecordUpdateService	updateService;
+	@Autowired
+	private AdministratorToolRecordDeleteService	deleteService;
 	// Constructors -----------------------------------------------------------
 
 
@@ -39,6 +45,9 @@ public class AdministratorToolRecordController extends AbstractController<Admini
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addBasicCommand(BasicCommand.CREATE, this.createService);
+		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addBasicCommand(BasicCommand.DELETE, this.deleteService);
 	}
 
 }
